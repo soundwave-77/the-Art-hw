@@ -3,27 +3,35 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{graphicx}
-\usepackage{a4wide}
-\title{Reconstructed abstract of the paper ``Put the paper title or DOI here''}
+% \usepackage{a4wide}
+\title{Reconstructed abstract of the paper ``Improving Language Understanding by Generative Pre-Training``}
 %\author{not specified, not necessary here}
 \date{}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-The abstract is limited to 600 characters. It may contain a wide-range field of the investigated problem, narrow problem to focus on, features and conditions of the problem, the idea of the suggested solution, the novelty and alternative solutions to compare with, application to illustrate with.
+    The article discusses how to improve natural language understanding by using a generative pre-training approach.
+    Natural language tasks like textual entailment, question answering, semantic similarity, and document classification often lack sufficient labeled data, 
+    which makes it hard for models trained solely on this data to perform well. However, the article shows that significant improvements can be achieved by 
+    first pre-training a language model on a large amount of unlabeled text, and then fine-tuning it discriminatively on specific tasks. During fine-tuning,
+    task-aware input transformations are applied, allowing for efficient transfer without major changes to the model architecture.
+    The approach is tested on various natural language benchmarks, outperforming models that are specifically designed for each task.
+    In fact, it improves results on 9 out of the 12 tasks studied, setting a new standard in many cases. For example, it boosts performance by 8.9\% on commonsense 
+    reasoning (Stories Cloze Test), 5.7\% on question answering (RACE), and 1.5\% on textual entailment (MultiNLI). This method shows that a general, task-agnostic 
+    model can surpass task-specific models, even with minimal changes.
 \end{abstract}
-\paragraph{Keywords:} The Art On Scientific Research, Abstract Reconstruction, Please Put Yours 
+\paragraph{Keywords:} Generative Pre-Training, Transformer Model, Unsupervised Learning, Language Understanding, Fine-Tuning.
 
 \paragraph{Highlights:}
 \begin{enumerate}
-\item Highlight one
-\item Highlight two
-\item Highlight three
+\item \textbf{Two-Stage Approach}: The paper introduced a novel two-stage process: unsupervised pre-training on vast amounts of text data, followed by supervised fine-tuning on specific NLP tasks. This approach significantly enhanced performance across multiple language understanding benchmarks.
+\item \textbf{Transformer Architecture}: It leveraged the Transformer model, which became crucial for capturing long-range dependencies in text and efficiently processing large-scale data, outperforming previous recurrent-based models.
+\item \textbf{Task Generalization}: The pre-trained model demonstrated strong generalization across different tasks, showing that a single generative model could adapt effectively to varied NLP tasks like text classification and question answering with minimal task-specific fine-tuning.
 \end{enumerate}
 
 \section{Introduction}
-Explain the reasons you chose the paper~\cite{9095246}. The reasons shall not be personal. They shall enlighten the novelty, impact, or contributions.  
+I chose this article ~\cite{GPT} because it is revolutionary in the field of AI and NLP in particular, since it was the first time that such a neural network architecture as GPT was proposed.
 %\begin{figure}
 %\includegraphics[scale=0.35]{SVD_derint}
 %\caption{A rigorous description of what the reader sees on the plot and the consequences of the shown result}
